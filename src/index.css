@@ -1,0 +1,495 @@
+body {
+  margin: 0;
+  background: linear-gradient(to right,#7DB9D0,#F5E942);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+#header{
+  height: 4rem;
+  background-color:brown;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 45% 5% 20% 10%;
+
+}
+#htitle{
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  margin: auto;
+}
+#searchbar{
+  height: 2rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+}
+#login-signup{
+  height: 3rem;
+  margin: auto;
+}
+#listcontainer{
+  background-color: #aeb7b8;
+  border-right: 2px solid black;
+}
+.items{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin: 1rem;
+}
+#recipeimg{
+  height: 3rem;
+  border-radius: 50%;
+  width: 3rem;
+}
+#itemlist{
+  list-style-type: none;
+  cursor:pointer;
+}
+#root{
+  margin:3rem;
+  background-color: white;
+}
+#nav{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  font-weight: bold;
+  color: blue;
+  cursor: pointer;
+}
+#mncontent{
+  display: grid;
+  grid-template-rows: auto auto auto;
+  width: 100%;
+  background:linear-gradient(to bottom,white,grey);
+}
+#second{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#first{
+  text-align: center;
+}
+#recipeTitle{
+  text-align: center;
+}
+#recipeImage{
+  height: 25rem;
+  width: 30rem;
+  border-radius: 40%;
+}
+#ing{
+  /*border-right: 3px solid orangered;*/
+  margin-right: 1rem;
+  
+}
+
+#middle{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+#recipeImg{
+  height: 15rem;
+  width: 80%;
+  margin-left: 6rem;
+  text-align: center;
+}
+#himage{
+  height: 3rem;
+  width: 3rem;
+  margin: auto;
+  cursor: pointer;
+}
+#shopping{
+  display: none;
+  background: #92E7D2;
+  margin: 0;
+}
+#dyna{
+  background: #f5f5f5;
+  height: 70vh;
+  border: 5px solid black;
+  width: 50vw;
+  position: fixed;
+  display: grid;
+  grid-template-rows: 20% 80%;
+  display: none;
+  left: 2rem;
+  left: 25%;
+  margin: auto;
+  background: linear-gradient(to right,#EE7672,#78F20C);
+}
+#TransparentBack{
+  display: none;
+  margin-top: -3rem;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: #181818;
+  opacity: 0.5;
+}
+#lgn{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  cursor: pointer;
+
+}
+#lgnInterface{
+  /*margin:5rem 18rem;*/
+  text-align: center;
+  font-weight: bold;
+
+}
+#lgn3{
+  text-align: center;
+  text-decoration: underline;
+}
+#signupInterface{
+  /*margin: 5rem 18rem;*/
+  text-align: center;
+  font-weight: bold;
+}
+#sign{
+  text-align: center;
+  text-decoration: underline;
+}
+#Footer{
+  height: 6rem;
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  overflow: hidden;
+}
+#Footer2{
+  /*margin-left: 3rem;
+  margin-top: 2rem;*/
+  text-align: center;
+  margin: auto;
+}
+#Footer3{
+  text-decoration: underline;
+  font-weight: bold;
+}
+#Footer4{
+  text-align: center;
+  margin: auto;
+  /*margin-right: 3rem;
+  margin-top: 2rem;*/
+}
+#fimage{
+  height: 2rem;
+  cursor: pointer;
+}
+#timage{
+  height: 2rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+#limage{
+  height: 2rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+#gimage{
+  height: 2rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+#slist{
+  text-align: center;
+  text-decoration: underline;
+}
+#dyna2{
+  background-color: rgb(9, 139, 139);
+}
+#search{
+  height: 2rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: white;
+}
+#welcome{
+  margin: 0px;
+  margin-top: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+#logout{
+  display: none;
+  height: 1rem;
+  width: 3rem;
+  right:20rem;
+  margin-top: 2.5rem;
+  position: fixed;
+  cursor: pointer;
+}
+#hello{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 50px;
+  font-style: italic;
+  text-decoration: underline;
+}
+#forkifyimg{
+  height: 15rem;
+  width: 25rem;
+  margin-top: 8rem;
+  border-radius: 10%
+}
+#address{
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#menu{
+  display: none;
+}
+#menuBar{
+  display: none;
+}
+#Logincross{
+  display: none;
+}
+#himage1{
+  display: none;
+}
+#cross{
+  display: none;
+}
+#cross2{
+  display: none;
+}
+#back{
+  display: none;
+}
+
+
+
+
+
+
+@media(max-width:450px){
+  #searchbar{
+    display: none;
+  }
+  #himage{
+    display: none;
+  }
+  #login-signup{
+    display: none;
+  }
+  #search{
+    display: none;
+  }
+  #header{
+    height: 2rem;
+    display: grid;
+    grid-template-columns: 10% 80% 10%; 
+  }
+  #htitle{
+    margin: 0px;
+    justify-self: left;
+    
+  }
+  #root{
+    margin: 0px;
+  }
+  #mncontent{
+    margin: 0px;
+  }
+  #menu{
+    display: block;
+    margin: 0px;
+    height: 2rem;
+    width:  2rem;
+  }
+  #himage1{
+    display: block;
+    margin: auto;
+    height: 2rem;
+    width: 2rem;
+  }
+  
+  #fav{
+    display: none;
+    margin-top: 2rem;
+    height: 100vh;  
+    width: 73vw;
+    position: fixed;
+    right: 0px;
+    background: white;
+    border: 2px solid black;
+    /*background:orange;*/
+    /*grid-template-rows: 10% 90%;*/
+  }
+  #cross{
+    display: block;
+    height: 2rem;
+    width: 2rem;
+  }
+  #Logincross{
+    display: block;
+    height: 2rem;
+    width: 2rem;
+  }
+  /*#cross2{
+    display: block;
+    height: 2rem;
+    width: 2rem;
+  }*/
+  #menuLoginSignup{
+    height: 3rem;
+    width: 15rem;
+    margin: auto;
+  }
+  #welcome2{
+    text-align: center;
+  }
+  #logout2{
+    display: none;
+    text-align: center;
+    margin-top: 0rem;
+  }
+  #searchbar2{
+    width: 15rem;
+    height: 3rem;
+    margin: auto;
+    text-align: center;
+
+  }
+  #dyna{
+    position: fixed;
+    display: none;
+    /* display: grid;
+    grid-template-rows: 20% 80%; */
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    left: 0px;
+  }
+  #itemlist{
+    padding: 0px;
+  }
+  #recipeImage{
+    height: 12rem;
+    width: 18rem;
+    border-radius: 28%;
+  } 
+  #recipeIdentity{
+  font-size:1rem;
+  margin: 0px;
+  margin-top: 1rem;
+  }
+  #recipeimg{
+    height: 4rem;
+    width: 4rem;
+  }
+  #middle{
+  display:grid;
+  grid-template-columns: 100% 0% 0%;
+  }
+  #listcontainer{
+    
+    border: 0px;
+    text-align: left;
+    width: 100%;
+    font-family: fantasy;
+    background: #a1ada4;
+    
+  }
+  #indexMenu{
+    display: block;
+    position: fixed;
+    z-index: 20;
+    left:0px;
+  }
+  #menuBar{
+    
+    height: 100vh;  
+    width: 80vw;
+    margin-top: 2rem;
+    border: 2px solid black;
+    background: #7DB9D0;
+    grid-template-rows: 20% 10% 10% 10% 10% 10% 10% 10% 10% ;
+  }
+  
+  #itemlist{
+  margin: 0px;
+  }
+  #mncontent{
+  display: none;
+  background: linear-gradient(to right,white,grey);
+  }
+  #shopping{
+  display: none;
+  }
+  #welcome{
+  display: none;
+  }
+  #back{
+  display: block;
+  height: 1.5rem;
+  widows: 1.5rem;
+  margin-top: 0.4rem;
+  margin-left: 0.4rem;
+  }
+}
+
+
+
+
+
+
+
