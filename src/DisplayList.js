@@ -28,7 +28,10 @@ class DisplayList extends React.Component{
             if(localStorage.getItem('content')==undefined){
             axios.post("https://www.food2fork.com/api/search?key=c1b8564ad85ca6d78d7fa40328a58abb  ")
             .then((result)=>{
+                console.log(result)
                 localStorage.setItem('content',JSON.stringify(result));
+                //var result1=JSON.parse(localStorage.getItem('content'));
+                console.log(result)
                 this.val=JSON.stringify(Object.keys(result.data.recipes).length);
                 if(result.data.recipes[this.state.j-1]!=undefined){
                     document.getElementById('itemlist').innerHTML="";
@@ -61,6 +64,7 @@ class DisplayList extends React.Component{
         }
         else{
             var result=JSON.parse(localStorage.getItem('content'));
+            console.log(result)
             this.val=JSON.stringify(Object.keys(result.data.recipes).length);
                 if(result.data.recipes[this.state.j-1]!=undefined){
                     document.getElementById('itemlist').innerHTML="";
