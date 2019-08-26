@@ -1,5 +1,7 @@
 const express= require('express');
 const app= express();
+const path=require('path');
+app.use(express.static(path.join(__dirname,"../build")));
 const server= require('http').createServer(app);
 let bodyParser=require('body-parser');
 let crypto = require('crypto-js');
@@ -9,6 +11,9 @@ let mongoClient= require('mongodb').MongoClient;
 //let users = ['rohit']
 //let passs = ['12345']
 const myKey = 'forkify';
+app.get("/",(req,res,next)=>{
+  res.sendFile(path.join(__dirname,"../build","index.html"));
+})
 
 
 
@@ -570,6 +575,10 @@ app.post('/sendData',(req,res)=>{
     //res.send(recipe[req.body.dishName])
 })
 
+app.use((req,res)=>{
+  res.send("404,not found");
+})
+
 
 
 // io.on('connection',(socket)=>{
@@ -585,6 +594,6 @@ app.post('/sendData',(req,res)=>{
 // //broadcasting
 // Io.emit('newCustomer')
 
-server.listen(4000,(req,res)=>{
-  console.log("Server is Listening to Port No 4000");
+server.listen(process.env.PORT||4000,(req,res)=>{
+  console.log("Server is Listening ");
 })
