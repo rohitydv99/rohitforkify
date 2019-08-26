@@ -20,7 +20,7 @@ class Content extends Component {
                         break;
                     }
                 }
-                axios.post('https://rohitforkifyserver.herokuapp.com/sendData',{'dishName':recipeName})
+                axios.post('/sendData',{'dishName':recipeName})
                 .then((result)=>{
                     document.getElementById("ing").innerHTML="";
                     document.getElementById("prep").innerHTML="";

@@ -1,5 +1,13 @@
 const express= require('express');
 const app= express();
+app.enable('trust proxy');
+app.use((req,res,next)=>{
+  if(req.protocol=='https'){
+    next();
+  }else{
+    res.redirect(`https://${req.hostname}`);
+  }
+})
 const path=require('path');
 app.use(express.static(path.join(__dirname,"../build")));
 const server= require('http').createServer(app);

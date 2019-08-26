@@ -10,7 +10,7 @@ import io from "socket.io-client";
 
 
 // socket.emit('abc',{"key":"value"});
-
+//https://rohitforkifyserver.herokuapp.com
 
 
 class Header extends React.Component{
@@ -20,7 +20,7 @@ constructor(props){
 
 
         if(localStorage.getItem('token')!=undefined){
-            Axios.post('https://rohitforkifyserver.herokuapp.com/verifyToken',{'token':localStorage.getItem('token')})
+            Axios.post('/verifyToken',{'token':localStorage.getItem('token')})
             .then((result)=>{
                 console.log(result)
                 if(result.data.status=='valid'){

@@ -127,7 +127,7 @@ document.addEventListener("click",(e)=>{
     else if(e.target.id=="ulogin"){
         var uname=document.getElementById('uemail').value
         var up=document.getElementById('upass').value
-        axios.post('https://rohitforkifyserver.herokuapp.com/login',{'userName':uname,'userPass':up})
+        axios.post('/login',{'userName':uname,'userPass':up})
         .then((result)=>{
             if(result.data.token=='invalid'){
                 window.location.reload();
@@ -145,7 +145,7 @@ document.addEventListener("click",(e)=>{
         var useremail=document.getElementById('uemailid').value
         var userpwd=document.getElementById('upwd').value
         var userphone=document.getElementById('uphone').value
-        axios.post('https://rohitforkifyserver.herokuapp.com/signup',{'name':username,'email':useremail,'password':userpwd,'phone':userphone})
+        axios.post('/signup',{'name':username,'email':useremail,'password':userpwd,'phone':userphone})
         .then((result)=>{
             if(result.data.status=='ok'){
                 window.location.reload();
