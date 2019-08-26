@@ -20,7 +20,7 @@ constructor(props){
 
 
         if(localStorage.getItem('token')!=undefined){
-            Axios.post('http://rohitforkifyserver.herokuapp.com/verifyToken',{'token':localStorage.getItem('token')})
+            Axios.post('https://rohitforkifyserver.herokuapp.com/verifyToken',{'token':localStorage.getItem('token')})
             .then((result)=>{
                 console.log(result)
                 if(result.data.status=='valid'){
